@@ -202,7 +202,8 @@
   <p class="h3">hellooo</p>
   <p>hellooo</p>
 </div>
-
+<!--Forms-->
+<h1>Forms</h1>
 <div class="container p-5 border">
   <div class="row">
     <div class="form-group col">
@@ -246,6 +247,8 @@
   </div>
 </div>
 
+<!--Tables-->
+<h1>Tables</h1>
 <div class="table-responsive-sm">
   <table class="table table-hover table-striped">
     <thead>
@@ -289,4 +292,64 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+<!--Svg symbol with alert combination-->
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path
+      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+    />
+  </symbol>
+</svg>
+
+<div
+  class="alert-sm alert-danger m-2 d-flex align-items-center justify-content-center"
+  role="alert"
+  style="height: 40px"
+>
+  <svg
+    class="bi flex-shrink-0 me-2"
+    style="height: 20px; width: 20px"
+    role="img"
+    aria-label="Danger:"
+  >
+    <use xlink:href="#exclamation-triangle-fill" />
+  </svg>
+  <div>An example danger alert with an icon</div>
+</div>
+
+<!--Badge-->
+
+<h6 style="text-align: center">
+  Badge profile <span class="badge text-bg-secondary">New</span>
+</h6>
+
+<!--Button Group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Action</button>
+  <button
+    type="button"
+    class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+    data-bs-toggle="dropdown"
+  >
+    choose..
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Option 1</a></li>
+    <li><a class="dropdown-item" href="#">Option 2</a></li>
+  </ul>
+</div>
+<div class="form-check form-switch m-5 border">
+  <input
+    class="form-check-input"
+    type="checkbox"
+    value=""
+    id="checkNativeSwitch"
+    switch
+  />
+  <label class="form-check-label" for="checkNativeSwitch">
+    Native switch haptics
+  </label>
 </div>
