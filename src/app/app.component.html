@@ -223,9 +223,9 @@
   </div>
 
   <div class="row mt-2">
-    <div class="form-group col">
+    <div class="form-group has-validation col">
       <label for="city">City</label>
-      <input type="text" class="form-control" id="city" />
+      <input type="text" class="form-control is-invalid" id="city" />
     </div>
 
     <div class="form-group col">
@@ -238,118 +238,358 @@
       </select>
     </div>
   </div>
-  <div class="row mt-5">
-    <div class="col d-flex justify-content-center align-items-center">
-      <button class="btn btn-primary btn-sm rounded-2" style="width: 150px">
-        Signup
+  <div class="row mt-2">
+    <div class="form-group col">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioDefault"
+          id="male"
+        />
+        <label class="form-check-label" for="male"> Male </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioDefault"
+          id="female"
+        />
+        <label class="form-check-label" for="female"> Female </label>
+      </div>
+    </div>
+    <div class="form-check form-check-inline m-3">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="terms"
+        value="accepted"
+      />
+      <label class="form-check-label" for="terms">Terms & Conditions</label>
+    </div>
+    <div class="row mt-5">
+      <div class="col d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary btn-sm rounded-2" style="width: 150px">
+          Signup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--Tables-->
+  <h1>Tables</h1>
+  <div class="table-responsive-sm">
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Pavan</td>
+          <td>Kumar</td>
+          <td>pavan&#64;gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Pavan</td>
+          <td>Kumar</td>
+          <td>pavan&#64;gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Pavan</td>
+          <td>Kumar</td>
+          <td>pavan&#64;gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Pavan</td>
+          <td>Kumar</td>
+          <td>pavan&#64;gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Pavan</td>
+          <td>Kumar</td>
+          <td>pavan&#64;gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Svg symbol with alert combination-->
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+      <path
+        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+      />
+    </symbol>
+  </svg>
+
+  <div
+    class="alert-sm alert-danger m-2 d-flex align-items-center justify-content-center"
+    role="alert"
+    style="height: 40px"
+  >
+    <svg
+      class="bi flex-shrink-0 me-2"
+      style="height: 20px; width: 20px"
+      role="img"
+      aria-label="Danger:"
+    >
+      <use xlink:href="#exclamation-triangle-fill" />
+    </svg>
+    <div>An example danger alert with an icon</div>
+  </div>
+
+  <!--Badge-->
+
+  <h6 style="text-align: center">
+    Badge profile <span class="badge text-bg-secondary">New</span>
+  </h6>
+
+  <!--Button Group -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Action</button>
+    <button
+      type="button"
+      class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"
+    >
+      choose..
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Option 1</a></li>
+      <li><a class="dropdown-item" href="#">Option 2</a></li>
+    </ul>
+  </div>
+  <div class="form-check form-switch m-5 border">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      value=""
+      id="checkNativeSwitch"
+      switch
+    />
+    <label class="form-check-label" for="checkNativeSwitch">
+      Native switch haptics
+    </label>
+  </div>
+</div>
+<button
+  type="button"
+  class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+  data-bs-toggle="dropdown"
+>
+  Hello
+</button>
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="#">Option 1</a></li>
+  <li><a class="dropdown-item" href="#">Option 2</a></li>
+  <li><a class="dropdown-item" href="#">Option 3</a></li>
+</ul>
+
+<div class="grid text-center border">
+  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+</div>
+
+<label for="customRange1" class="form-label">Example range</label>
+<input type="range" class="form-range" id="customRange1" />
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      value="Mark"
+      required
+    />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      value="Otto"
+      required
+    />
+    <div class="valid-feedback">Looks good!</div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <input
+        type="text"
+        class="form-control"
+        id="validationCustomUsername"
+        aria-describedby="inputGroupPrepend"
+        required
+      />
+      <div class="invalid-feedback">Please choose a username.</div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required />
+    <div class="invalid-feedback">Please provide a valid city.</div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">Please select a valid state.</div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required />
+    <div class="invalid-feedback">Please provide a valid zip.</div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="invalidCheck"
+        required
+      />
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">You must agree before submitting.</div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+        Accordion Item #1
       </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Placeholder content for this accordion, which is intended to demonstrate
+        the <code>.accordion-flush</code> class. This is the first item’s
+        accordion body.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo"
+      >
+        Accordion Item #2
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Placeholder content for this accordion, which is intended to demonstrate
+        the <code>.accordion-flush</code> class. This is the second item’s
+        accordion body. Let’s imagine this being filled with some actual
+        content.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseThree"
+        aria-expanded="false"
+        aria-controls="flush-collapseThree"
+      >
+        Accordion Item #3
+      </button>
+    </h2>
+    <div
+      id="flush-collapseThree"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Placeholder content for this accordion, which is intended to demonstrate
+        the <code>.accordion-flush</code> class. This is the third item’s
+        accordion body. Nothing more exciting happening here in terms of
+        content, but just filling up the space to make it look, at least at
+        first glance, a bit more representative of how this would look in a
+        real-world application.
+      </div>
     </div>
   </div>
 </div>
-
-<!--Tables-->
-<h1>Tables</h1>
-<div class="table-responsive-sm">
-  <table class="table table-hover table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Pavan</td>
-        <td>Kumar</td>
-        <td>pavan&#64;gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Pavan</td>
-        <td>Kumar</td>
-        <td>pavan&#64;gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Pavan</td>
-        <td>Kumar</td>
-        <td>pavan&#64;gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Pavan</td>
-        <td>Kumar</td>
-        <td>pavan&#64;gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Pavan</td>
-        <td>Kumar</td>
-        <td>pavan&#64;gmail.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<!--Svg symbol with alert combination-->
-
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
-    <path
-      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-    />
-  </symbol>
-</svg>
-
-<div
-  class="alert-sm alert-danger m-2 d-flex align-items-center justify-content-center"
-  role="alert"
-  style="height: 40px"
->
-  <svg
-    class="bi flex-shrink-0 me-2"
-    style="height: 20px; width: 20px"
-    role="img"
-    aria-label="Danger:"
+<button type="button" class="btn-close" aria-label="Close"></button>
+<p class="d-inline-flex gap-1">
+  <a
+    class="btn btn-primary"
+    data-bs-toggle="collapse"
+    href="#collapseExample"
+    role="button"
+    aria-expanded="false"
+    aria-controls="collapseExample"
   >
-    <use xlink:href="#exclamation-triangle-fill" />
-  </svg>
-  <div>An example danger alert with an icon</div>
-</div>
-
-<!--Badge-->
-
-<h6 style="text-align: center">
-  Badge profile <span class="badge text-bg-secondary">New</span>
-</h6>
-
-<!--Button Group -->
-<div class="btn-group">
-  <button type="button" class="btn btn-primary">Action</button>
+    Link with href
+  </a>
   <button
+    class="btn btn-primary"
     type="button"
-    class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-    data-bs-toggle="dropdown"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapseExample"
+    aria-expanded="false"
+    aria-controls="collapseExample"
   >
-    choose..
+    Button with data-bs-target
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Option 1</a></li>
-    <li><a class="dropdown-item" href="#">Option 2</a></li>
-  </ul>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by
+    default but revealed when the user activates the relevant trigger.
+  </div>
 </div>
-<div class="form-check form-switch m-5 border">
-  <input
-    class="form-check-input"
-    type="checkbox"
-    value=""
-    id="checkNativeSwitch"
-    switch
-  />
-  <label class="form-check-label" for="checkNativeSwitch">
-    Native switch haptics
-  </label>
-</div>
+<div class="d-inline p-2 text-bg-primary">d-inline</div>
+<div class="d-inline p-2 text-bg-dark">d-inline</div>
+
+<span class="d-block p-2 text-bg-primary">d-block</span>
+<span class="d-block p-2 text-bg-dark">d-block</span>
